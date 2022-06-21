@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-
-
 int main() {
 
     int usrInp, pair[5], odd[5];
