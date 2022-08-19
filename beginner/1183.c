@@ -2,15 +2,15 @@
 
 int main() {
 
-    double matrix[12][12], result = 0;
+    float matrix[12][12], result, valuesAmount;
     char charInp;
-    int valuesAmount;
+    result = valuesAmount = 0;
 
     scanf("%c", &charInp);
 
     for (int i = 0; i < 12; i++) {
         for (int j = 0; j < 12; j++) {
-            if (scanf("%lf", &matrix[i][j]) && j > i) {
+            if (scanf("%f", &matrix[i][j]) && j < i) {
                 result += matrix[i][j];
                 valuesAmount++;
             }
@@ -19,7 +19,7 @@ int main() {
 
     if (charInp == 'M') result /= valuesAmount;
 
-    printf("%.1lf\n", result);
+    printf("%.1f\n", result);
 
     return 0;
 }
