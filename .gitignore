@@ -27,4 +27,20 @@
 # Ignore code-workspaces
 *.code-workspace
 
+# Ignore bin files
+
+*
+!/**/
+!*.*
+
+# Ignore test files
+
+*.txt
+*.json
+
+# Ignore incomplete problems 
+
+1837.c
+1120.c
+
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode
